@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/poppinsRegular.ttf') format('opentype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    background-color: #F9F9F9;
+
+    ul{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 100px;
+    align-items: center;
+    
+    img{
+        width: 300px;
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        
+        li{
+            color: #333333;
+            font-size: 20px;
+            transition: .2s;
+            
+            a{
+                transition: .2s;
+                
+                svg{
+                    width: 30px;
+                    transition: .2s;
+                    stroke: #333333;
+                }   
+            }
+            
+            &:hover{
+                transform: scale(1.1);
+                a{
+                    color: #DD7B4A;
+                    svg{
+                        transform: scale(1.1);
+                        stroke: #DD7B4A;
+                    }
+                }
+                
+            }
+        }
+    }
+}
