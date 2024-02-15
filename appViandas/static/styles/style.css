@@ -3,12 +3,12 @@
     src: url('../fonts/poppinsRegular.ttf') format('opentype');
 }
 
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins';
-    background-color: #F9F9F9;
 
     ul{
         list-style: none;
@@ -61,6 +61,90 @@
                     }
                 }
                 
+            }
+        }
+    }
+}
+
+.main{
+    .index{
+        background: linear-gradient(rgba(129, 166, 28, 0.94), rgba(129, 166, 28, 0.94)), url('../img/fondo.png') center/cover no-repeat; 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 150px;
+        color: #e3e3e3;
+
+        div{
+
+            h1{
+                font-size: 36px;
+                margin: 8px 0;
+            }
+
+            p{
+                font-size: 16px;
+                margin: 8px 0;
+            }
+
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+
+    .viandas{
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        margin: 25px;
+
+        section{
+            border: 1px solid #cccccc;
+            padding: 60px;
+
+            img{
+                width: 300px;
+                margin: 0 50px;
+            }
+            p{
+                text-align: center;
+                font-size: 20px;
+                margin: 20px 0;
+
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .ofertas{
+        background: linear-gradient(rgba(221, 123, 74, .89), rgba(221, 123, 74, .89)), url('../img/ofertas.png') center/cover no-repeat;
+
+        height: 500px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        h3{
+            margin-left: 120px;
+            color: #e3e3e3;
+            font-size: 20px;
+        }
+    }
+
+    .mas_vendido{
+        margin: 70px 0 500px 0;
+        text-align: center;
+
+
+        h3{
+            font-weight: bold;
+            font-size: 20px;
+    
+            span{
+                color: #DD7B4A;
             }
         }
     }

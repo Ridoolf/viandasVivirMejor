@@ -2,9 +2,49 @@
 
 {% block title %}Almacen | Inicio{% endblock %}
 
+{% load static %}
 {% block content %}
 
     {% include 'components/navbar.html' %}
+    <div class="main">
+
+        <div class="index">
+            
+            <div>
+                
+                <h1>Estar mejor, <span>es una elección <br>de vida</span></h1>
+                
+                <p>En Almacen de viandas <span>creemos que podemos mejorar la <br>forma de alimentarse de las personas.</span></p> 
+                <p>Elaboramos comidas ricas, saludables y prácticas que te <br> <span>ayudan a resolver tu alimentación en la rutina de todos los <br> días.</span></p>
+                
+            </div>
+            
+            
+        </div>
+
+        <div class="viandas">
+
+            <section>
+                <img src="{% static 'img/vianda150.png' %}" alt="imagen que hace referencia a las viandas de 150 calorias">
+                <p>Viandas de <span>150 calorias</span></p>
+            </section>
+
+            <section>
+                <img src="{% static 'img/vianda300.png' %}" alt="imagen que hace referencia a las viandas de 300 calorias">
+                <p>Viandas de <span>300 calorias</span></p>
+            </section>
+
+        </div>
+
+        <div class="ofertas">
+            <h3>¡Nuestras ofertas!</h3>
+            
+        </div>
+
+        <div class="mas_vendido">
+            <h3>¡Nuestros productos <span>mas vendidos!</span></h3>
+        </div>
     
-    
+    </div>
+
 {% endblock %}
